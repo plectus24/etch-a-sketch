@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height:1000px; 
+    max-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas{
+    border: solid red 0.5px;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+/* .canvas:hover{
+    background-color: green;
+} */
