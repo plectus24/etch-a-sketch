@@ -20,17 +20,19 @@ function clearCanvas() {
 function createCanvas() {
   const canvasCreate = document.querySelector(".create-canvas");
   canvasCreate.addEventListener("click", (e) => {
+    let curSize = [...document.querySelectorAll(".canvas")].length;
     let size = -1;
     while (size < 0 || size > 100) {
       // Don't change anything if promt cancelled
       size = prompt("Enter a size");
       if (size === null) {
-        size = document.querySelectorAll(".canvas");
+        //size = document.querySelectorAll(".canvas");
+        size = curSize;
         console.log(size);
       }
       console.log("hjkiwebs");
     }
-    // clearCanvas();
+    clearCanvas();
     createDivs(size);
     canvasHover();
   });
