@@ -2,24 +2,43 @@
     margin: 0;
     padding: 0;
 }
-html{
-    height: 100vh;
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   height: 100vh;
+   /* overflow: hidden; */
+   margin: 0;
 }
 
 .container{
+    align-self: center;
     display: flex;
-    flex-wrap: wrap;
-    height:1000px; 
-    max-height: 90vh;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* height:80vw; 
+    max-height: 90vh; */
+    width: 1000px;
+    height: 1000px;
+    /* background-color: goldenrod; */
+}
+
+.canvas-row{
+    display: flex;
+    flex-direction: row;
+
+    /* test */
+    /* margin-bottom: auto; */
+    align-self: stretch;
 }
 
 .canvas{
     border: solid red 0.5px;
-    height: 100px;
-    width: 100px;
+    /* height: 100px; */
+    /* width: calc(100%*(1 / 16) - 10px - 1px); */
     background-color: aqua;
+    flex: auto;
+    align-self: stretch;
 }
 
 /* .canvas:hover{
