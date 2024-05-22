@@ -1,34 +1,3 @@
-console.log("hi"); //// currently commenting
-// create 16 divs by default
-// function createDivs(size = 16) {
-//   const container = document.querySelector(".container");
-//   const canvasRow = document.createElement("div");
-//   // const row = document.createElement("div");
-//   for (let i = 0; i < size; i++) {
-//     const row = document.createElement("div");
-//     row.className = "canvas-row";
-//     container.appendChild(row);
-//   }
-//   const allRows = [...document.querySelectorAll(".canvas-row")];
-//   allRows.forEach((item) => {
-//     for (let i = 0; i < size; i++) {
-//       const div = document.createElement("div");
-//       div.className = "canvas";
-//       div.style.width = (window.innerWidth * 2) / 3 / size + "px";
-//       div.style.height = (window.innerHeight * 2) / 3 / size + "px";
-//       item.appendChild(div);
-//     }
-//   });
-
-//   // console.log(canvasRow);
-
-//   // for (let j = 0; j < size; j++) {
-//   //   // const canvasRow = document.createElement("div");
-//   //   canvasRow.className = "canvas-row";
-//   //   container.appendChild(canvasRow);
-//   // }
-// }
-
 function createDivs(size = 16) {
   const container = document.querySelector(".container");
   container.innerHTML = ""; // Clear existing content
@@ -83,7 +52,6 @@ function createCanvas() {
       // Don't change anything if promt cancelled
       size = prompt("Enter a size");
       if (size === null) {
-        //size = document.querySelectorAll(".canvas");
         size = curSize;
         console.log(size);
       }
@@ -105,11 +73,6 @@ function canvasHover() {
       let currentColor = getComputedStyle(item).backgroundColor;
       let newColor = darkenTile(currentColor);
       item.style.backgroundColor = newColor;
-      // item.style.backgroundColor = "grey";
-      // let computedStyle = window.getComputedStyle(item);
-      // let colorString = computedStyle.backgroundColor;
-      // console.log(colorString);
-      // if (tileBgColor) item.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     });
   });
 }
