@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* Body */
 body{
     display: flex;
     flex-direction: column;
@@ -13,16 +14,24 @@ body{
 
 .container{
     align-self: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     /* height:80vw; 
     max-height: 90vh; */
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     /* background-color: goldenrod; */
 }
+/* Draw Button */
+.create-canvas{
+    align-self: center;
+    width: 300px;
+    height: 50px;
+}
 
+/* Drawing Canvas */
 .canvas-row{
     display: flex;
     flex-direction: row;
